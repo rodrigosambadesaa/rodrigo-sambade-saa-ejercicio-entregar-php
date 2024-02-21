@@ -70,6 +70,8 @@
         echo "<p>Por favor, complete todos los campos del formulario.</p>";
     }
     ?>
+
+    <a href="../www/index.html">Volver al formulario</a>
 </div>
 </body>
 </html>
