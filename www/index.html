@@ -12,32 +12,32 @@
     <form action="../php/procesar_formulario.php" method="post">
         <div class="form-group">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" required placeholder="p. ej Rodrigo" tabindex="1">
         </div>
         <div class="form-group">
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
+            <input type="text" id="apellido" name="apellido" required placeholder="p.ej Sambade" tabindex="2">
         </div>
         <div class="form-group">
             <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" required>
+            <input type="number" id="edad" name="edad" required placeholder="29" tabindex="3">
         </div>
         <div class="form-group">
             <label>Sexo:</label><br>
-            <input type="radio" id="masculino" name="sexo" value="masculino" required>
+            <input type="radio" id="masculino" name="sexo" value="masculino" required tabindex="4">
             <label for="masculino">Masculino</label><br>
-            <input type="radio" id="femenino" name="sexo" value="femenino">
+            <input type="radio" id="femenino" name="sexo" value="femenino" tabindex="5">
             <label for="femenino">Femenino</label><br>
         </div>
         <div class="form-group">
             <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+            <input type="email" id="correo" name="correo" required placeholder="rodrigosambadesaa@gmail.com" tabindex="6">
         </div>
         <div class="form-group">
             <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
+            <input type="tel" id="telefono" name="telefono" required placeholder="608030077" tabindex="7">
         </div>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" tabindex="8">
     </form>
 </div>
 </body>
