@@ -15,12 +15,12 @@
     <h1>Datos Ingresados</h1>
     <?php
         // Recopilando datos del formulario
-        $nombre = isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : '';
-        $apellido = isset($_REQUEST['apellido']) ? $_REQUEST['apellido'] : '';
-        $edad = isset($_REQUEST['edad']) ? $_REQUEST['edad'] : '';
-        $sexo = isset($_REQUEST['sexo']) ? $_REQUEST['sexo'] : '';
-        $correo = isset($_REQUEST['correo']) ? $_REQUEST['correo'] : '';
-        $telefono = isset($_REQUEST['telefono']) ? $_REQUEST['telefono'] : '';
+        $nombre = isset($_REQUEST['nombre']) ? trim($_REQUEST['nombre']) : '';
+        $apellido = isset($_REQUEST['apellido']) ? trim($_REQUEST['apellido']) : '';
+        $edad = isset($_REQUEST['edad']) ? trim($_REQUEST['edad']) : '';
+        $sexo = isset($_REQUEST['sexo']) ? trim($_REQUEST['sexo']) : '';
+        $correo = isset($_REQUEST['correo']) ? trim($_REQUEST['correo']) : '';
+        $telefono = isset($_REQUEST['telefono']) ? trim($_REQUEST['telefono']) : '';
 
         // Validando campos no vacíos
         if (!empty($nombre) && !empty($apellido) && !empty($edad) && !empty($sexo) && !empty($correo) && !empty($telefono)) {
