@@ -30,31 +30,31 @@
 
             // Validar que el nombre y apellido sean cadenas de texto válidas
             if ($nombre === false || $apellido === false) {
-                echo "<p>Por favor, ingrese un nombre y apellido válidos.</p>";
+                echo "<p>Por favor, ingrese un <strong>nombre y apellido</strong> válidos.</p>";
                 exit;
             }
 
             // Validar que la edad sea un número entero positivo
             if ($edad === false || $edad < 0) {
-                echo "<p>Por favor, ingrese una edad válida.</p>";
+                echo "<p>Por favor, ingrese una <strong>edad</strong> válida.</p>";
                 exit;
             }
 
             // Validar que el sexo sea un valor válido
             if ($sexo !== 'masculino' && $sexo !== 'femenino') {
-                echo "<p>Por favor, seleccione un sexo válido.</p>";
+                echo "<p>Por favor, seleccione un <strong></strong>sexo válido.</p>";
                 exit;
             }
 
             // Validar que el correo sea un correo electrónico válido
             if ($correo === false) {
-                echo "<p>Por favor, ingrese un correo electrónico válido.</p>";
+                echo "<p>Por favor, ingrese un <strong>correo electrónico</strong> válido.</p>";
                 exit;
             }
 
             // Validar que el teléfono sea un número de teléfono válido, teniendo en cuenta el formato internacional
             if ($telefono === false) {
-                echo "<p>Por favor, ingrese un número de teléfono válido.</p>";
+                echo "<p>Por favor, ingrese un <strong>número de teléfono</strong> válido.</p>";
                 exit;
             }
 
