@@ -21,12 +21,12 @@
         // Validando campos no vacíos
         if (!empty($nombre) && !empty($apellido) && !empty($edad) && !empty($sexo) && !empty($correo) && !empty($telefono)) {
             // Validando los datos ingresados
-            $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
-            $apellido = filter_var($apellido, FILTER_SANITIZE_STRING);
+            $nombre = filter_var($nombre, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            $apellido = filter_var($apellido, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
             $edad = filter_var($edad, FILTER_VALIDATE_INT);
-            $sexo = filter_var($sexo, FILTER_SANITIZE_STRING);
+            $sexo = filter_var($sexo, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
             $correo = filter_var($correo, FILTER_VALIDATE_EMAIL);
-            $telefono = filter_var($telefono, FILTER_SANITIZE_STRING);
+            $telefono = filter_var($telefono, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
             // Validar que el nombre y apellido sean cadenas de texto válidas
             if ($nombre === false || $apellido === false) {
