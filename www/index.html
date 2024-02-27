@@ -11,32 +11,32 @@
     <h1>Formulario de Datos Personales</h1>
     <form action="../php/procesar_formulario.php" method="post">
         <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="p. ej Rodrigo">
+            <label for="nombre">Nombre: <span class="required">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="p. ej Rodrigo" required>
         </div>
         <div class="form-group">
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" placeholder="p.ej Sambade">
+            <label for="apellido">Apellido: <span class="required">*</span></label>
+            <input type="text" id="apellido" name="apellido" placeholder="p.ej Sambade" required>
         </div>
         <div class="form-group">
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" placeholder="29">
+            <label for="edad">Edad: <span class="required">*</span></label>
+            <input type="number" id="edad" name="edad" placeholder="29" required>
         </div>
         <div class="form-group">
-            <label>Sexo:</label><br>
-            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label>Sexo: <span class="required">*</span></label><br>
+            <input type="radio" id="masculino" name="sexo" value="masculino" required>
             <label for="masculino">Masculino</label><br>
-            <input type="radio" id="femenino" name="sexo" value="femenino">
+            <input type="radio" id="femenino" name="sexo" value="femenino" required>
             <label for="femenino">Femenino</label>
         </div>
         <div class="form-group">
             <label for="correo">Correo Electrónico:  <span class="required">*</span></label>
             <input type="email" id="correo" name="correo" placeholder="rodrigosambadesaa@gmail.com" required>
-           
         </div>
         <div class="form-group">
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="608030077">
+            <label for="telefono">Teléfono: <span class="required">*</span></label>
+            <input type="tel" id="telefono" name="telefono" placeholder="608030077" required>
+            
         </div>
         <input type="submit" value="Enviar">
     </form>
