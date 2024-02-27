@@ -51,6 +51,7 @@ input[type="submit"] {
     cursor: pointer;
     float: none;
     white-space:  nowrap;
+
 }
 
 input[type="submit"]:hover {
@@ -62,5 +63,9 @@ input[type="submit"]:hover {
 }
 
 .message { 
+    text-align: center;
+}
+
+.div-botones {
     text-align: center;
 }
