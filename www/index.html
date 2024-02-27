@@ -12,33 +12,35 @@
     <form action="../php/procesar_formulario.php" method="post">
         <div class="form-group">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="p. ej Rodrigo">
+            <input type="text" id="nombre" name="nombre" placeholder="p. ej Rodrigo">
         </div>
         <div class="form-group">
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required placeholder="p.ej Sambade">
+            <input type="text" id="apellido" name="apellido" placeholder="p.ej Sambade">
         </div>
         <div class="form-group">
             <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" required placeholder="29">
+            <input type="number" id="edad" name="edad" placeholder="29">
         </div>
         <div class="form-group">
             <label>Sexo:</label><br>
-            <input type="radio" id="masculino" name="sexo" value="masculino" required>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
             <label for="masculino">Masculino</label><br>
             <input type="radio" id="femenino" name="sexo" value="femenino">
             <label for="femenino">Femenino</label>
         </div>
         <div class="form-group">
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required placeholder="rodrigosambadesaa@gmail.com">
+            <label for="correo">Correo Electrónico:  <span class="required">*</span></label>
+            <input type="email" id="correo" name="correo" placeholder="rodrigosambadesaa@gmail.com" required>
+           
         </div>
         <div class="form-group">
             <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required placeholder="608030077">
+            <input type="tel" id="telefono" name="telefono" placeholder="608030077">
         </div>
         <input type="submit" value="Enviar">
     </form>
+    <p class="message required">Los campos marcados con * son obligatorios.</p>
 </div>
 </body>
 </html>
